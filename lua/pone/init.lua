@@ -1,6 +1,6 @@
 local M = {}
 
-function M.setup()
+function M.setup(opts)
 	opts = opts or {}
 
 	vim.keymap.set("n", "<leader>n", function()
