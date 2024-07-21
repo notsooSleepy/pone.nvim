@@ -1,7 +1,15 @@
 local M = {}
 
 function M.setup()
-	print("hello world")
+	opts = opts or {}
+
+	vim.keymap.set("n", "<leader>b", function()
+		if opts.name then
+			print("hello, " .. opts.name)
+		else
+			print("hello world")
+		end
+	end)
 end
 
 return M
