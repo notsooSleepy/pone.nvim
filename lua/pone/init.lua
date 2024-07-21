@@ -3,7 +3,7 @@ local M = {}
 function M.setup()
 	opts = opts or {}
 
-	vim.keymap.set("n", "<leader>n", function()
+	vim.keymap.set("n", "<leader>hg", function()
 		if opts.name then
 			print("hello, " .. opts.name)
 		else
